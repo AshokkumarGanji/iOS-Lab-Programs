@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0D43F20E-AE6A-434C-BF93-1B0750450D53"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C0AE1D86-18D0-4F04-88A7-EE496F5A7F2F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VowelTester/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "BtnClicked(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C0AE1D86-18D0-4F04-88A7-EE496F5A7F2F - b0155169c0bf5f8f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VowelTester.ViewController.BtnClicked(__C.UIButton) -&gt; ()"
+                  moduleName = "VowelTester"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/s561723/Desktop/VowelTester/VowelTester/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "2272">
+               </Location>
+               <Location
+                  uuid = "C0AE1D86-18D0-4F04-88A7-EE496F5A7F2F - b0155169c0bf5f8f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VowelTester.ViewController.BtnClicked(__C.UIButton) -&gt; ()"
+                  moduleName = "VowelTester"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/s561723/Desktop/VowelTester/VowelTester/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "2208">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
