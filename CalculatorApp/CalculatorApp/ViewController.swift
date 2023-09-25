@@ -2,142 +2,262 @@
 //  ViewController.swift
 //  CalculatorApp
 //
-//  Created by Ganji,Ashok Kumar on 9/19/23.
+//  Created by Ashok on 9/23/23.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
 
-    
-    
-    //All the outlet  connection variables
-    
-    
-    @IBOutlet weak var resultOutlet: UILabel!
-    
-    @IBOutlet weak var AcOutlet: UIButton!
-    
-    @IBOutlet weak var cbuttonOutlect: UIButton!
-    
-    @IBOutlet weak var plusminusbuttonOutlet: UIButton!
-    
-    @IBOutlet weak var divbuttonOutlet: UIButton!
-    
-    @IBOutlet weak var buttonSeven: UIButton!
-    
-    @IBOutlet weak var buttonEight: UIButton!
-    
-    @IBOutlet weak var buttonNine: UIButton!
-    
-    @IBOutlet weak var buttonMul: UIButton!
-    
-    @IBOutlet weak var buttonFour: UIButton!
-    
-    @IBOutlet weak var buttonFive: UIButton!
-    
-    @IBOutlet weak var buttonSix: UIButton!
-    
-    @IBOutlet weak var buttonMinus: UIButton!
-    
-    @IBOutlet weak var buttonOne: UIButton!
-    
-    @IBOutlet weak var buttonTwo: UIButton!
-    
-    @IBOutlet weak var buttonThree: UIButton!
-    
-    @IBOutlet weak var buttonPlus: UIButton!
-    
-    @IBOutlet weak var buttonZero: UIButton!
-    
-    @IBOutlet weak var buttonDot: UIButton!
-    
-    @IBOutlet weak var buttonPercentage: UIButton!
-    
-    @IBOutlet weak var buttonEquals: UIButton!
-    
-    
-    
-    // The Actions fucntions for all the respective buttons.
-    @IBAction func AcButton(_ sender: Any) {
-        
-        
-    }
-    
-    @IBAction func CButton(_ sender: Any) {
-        
-    }
-    
-    @IBAction func PlusMinusButton(_ sender: Any) {
-    }
-    
-    
-    @IBAction func DivButton(_ sender: Any) {
-    }
-    
-    @IBAction func ButtonSeven(_ sender: Any) {
-    }
-    
-    @IBAction func ButtonEight(_ sender: Any) {
-    }
-    
-    @IBAction func ButtonNine(_ sender: Any) {
-    }
-    
-    @IBAction func ButtonMul(_ sender: Any) {
-    }
-    
-    
-    @IBAction func ButtonFour(_ sender: Any) {
-    }
-    
-    @IBAction func ButtonFive(_ sender: Any) {
-    }
-    
-    @IBAction func ButtonSix(_ sender: Any) {
-    }
-    
-    @IBAction func ButtonMinus(_ sender: Any) {
-    }
-    
-    @IBAction func ButtonOne(_ sender: Any) {
-    }
-    
-    
-    @IBAction func ButtonTwo(_ sender: Any) {
-    }
-    
-    
-    @IBAction func ButtonThree(_ sender: Any) {
-    }
-    
-    @IBAction func ButtonPlus(_ sender: Any) {
-    }
-    
-    
-    @IBAction func BUttonZero(_ sender: Any) {
-    }
-    
-    @IBAction func ButtonDot(_ sender: Any) {
-    }
-    
-    @IBAction func ButtonPercentage(_ sender: Any) {
-    }
-    
-    
-    @IBAction func ButtonEquals(_ sender: Any) {
-    }
-    
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
-}
+    //Declare variables
+        var currentInput = ""
+        var currentOperator: String?
+        var previousInput = ""
+    
+    @IBOutlet weak var resultOutlet: UILabel!
+    
+  
+    // Action method for AC button
+    @IBAction func clearAllButtonPressed(_ sender: UIButton) {
+        
+        clearCalculator()
+               
+    }
+    
+        // Action method for C button
+    @IBAction func clearButtonPressed(_ sender: UIButton) {
+                
+        clearCurrentInput()
+    }
+    
+    // Action method for +/- button
+    @IBAction func signChangeButton(_ sender: UIButton) {
+        
+        toggleSign()
+    }
+    
+    // Action methods for arithmetic operations
+    @IBAction func divideButtonPressed(_ sender: UIButton) {
+        
+        operatorAction("/")
+    }
+    
+    
+    @IBAction func multiplyButtonPressed(_ sender: UIButton) {
+        operatorAction("*")
+    }
+    
+    
+    
+    @IBAction func substractButtonPressed(_ sender: UIButton) {
+        operatorAction("-")
+    }
+    
+    
+    @IBAction func addButtonPressed(_ sender: UIButton) {
+        operatorAction("+")
+    }
+    
+    
+    @IBAction func equalsButtonPressed(_ sender: UIButton) {
+        
+        calculationOperation()
+    }
+    
+    // Action method for % (modulo) button
+    @IBAction func moduloButtonPressed(_ sender: UIButton) {
+        
+        operatorAction("%")
+    }
+   
+    // Action method for decimal point button
+    @IBAction func decimalButtonPressed(_ sender: UIButton) {
+        
+        appendDecimalPoint()
+        
+//        if !currentInput.contains("."){
+//            currentInput += "."
+//            resultOutlet.text = currentInput
+//        }
+        
+    }
+    
+   
+    //Number buttons functions
+    @IBAction func sevenButtonPressed(_ sender: UIButton) {
+        
+        if let digit = sender.titleLabel?.text {
+            currentInput += digit
+            resultOutlet.text = currentInput
+        }
+    }
+    
+    @IBAction func eightButtonPressed(_ sender: UIButton) {
+        
+        if let digit = sender.titleLabel?.text {
+            currentInput += digit
+            resultOutlet.text = currentInput
+        }
+    }
+    
+    
+    @IBAction func nineButtonPressed(_ sender: UIButton) {
+        if let digit = sender.titleLabel?.text {
+            currentInput += digit
+            resultOutlet.text = currentInput
+        }
+    }
+    
+    
+    @IBAction func fourButtonPressed(_ sender: UIButton) {
+        
+        if let digit = sender.titleLabel?.text {
+            currentInput += digit
+            resultOutlet.text = currentInput
+        }
+    }
+    
+    @IBAction func fiveButtonPressed(_ sender: UIButton) {
+        
+        if let digit = sender.titleLabel?.text {
+            currentInput += digit
+            resultOutlet.text = currentInput
+            
+        }
+    }
+    
+    
+    @IBAction func sixButtonPressed(_ sender: UIButton) {
+        
+        if let digit = sender.titleLabel?.text {
+            currentInput += digit
+            resultOutlet.text = currentInput
+        }
+    }
+    
+    @IBAction func oneButtonPressed(_ sender: UIButton) {
+        
+        if let digit = sender.titleLabel?.text {
+            currentInput += digit
+            resultOutlet.text = currentInput
+        }
+    }
+    
+   
+    @IBAction func twoButtonPressed(_ sender: UIButton) {
+        
+        if let digit = sender.titleLabel?.text {
+            currentInput += digit
+            resultOutlet.text = currentInput
+        }
+    }
+    
+ 
+    @IBAction func threeButtonPressed(_ sender: UIButton) {
+        if let digit = sender.titleLabel?.text {
+            currentInput += digit
+            resultOutlet.text = currentInput
+        }
+    }
+    
+    
+    @IBAction func zeroButtonPressed(_ sender: UIButton) {
+        
+        if let digit = sender.titleLabel?.text {
+            currentInput += digit
+            resultOutlet.text = currentInput
+        }
+    }
+    
+    // Function to clear the calculator
+        func clearCalculator() {
+            currentInput = ""
+            currentOperator = nil
+            previousInput = ""
+            resultOutlet.text = ""
+        }
+    
+    // Function to clear the current input
+        func clearCurrentInput() {
+            currentInput = ""
+            resultOutlet.text = ""
+        }
+    
+    // Function to toggle the sign of the current input
+        func toggleSign() {
+            if !currentInput.isEmpty {
+                if currentInput.first == "-" {
+                    currentInput.removeFirst()
+                } else {
+                    currentInput = "-" + currentInput
+                }
+                resultOutlet.text = currentInput
+            }
+        }
+    
+    // Function to append a decimal point to the current input
+        func appendDecimalPoint() {
+            if !currentInput.contains(".") {
+                currentInput += "."
+                resultOutlet.text = currentInput
+            }
+        }
+    
+    // Function to handle arithmetic operator button presses
+    func operatorAction(_ operatorSymbol: String) {
+            if !currentInput.isEmpty {
+                currentOperator = operatorSymbol
+                previousInput = currentInput
+                currentInput = ""
+                resultOutlet.text = ""
+            }
+        }
+    
+    // Function to perform the calculation
+    func calculationOperation() {
+           if let operatorSymbol = currentOperator, !currentInput.isEmpty {
+               
+               let oprd1 = Double(previousInput) ?? 0.0
+               let oprd2 = Double(currentInput) ?? 0.0
+               var resultValue: Double = 0.0
+               
+               switch operatorSymbol {
+               case "+":
+                   resultValue = oprd1 + oprd2
+               case "-":
+                   resultValue = oprd1 - oprd2
+               case "*":
+                   resultValue = oprd1 * oprd2
+               case "/":
+                   if oprd2 != 0 {
+                       resultValue = oprd1 / oprd2
+                   } else {
+                       resultOutlet.text = "Not a valid  Number "
+                       return
+                   }
+               case "%":
+                   if oprd2 != 0 {
+                       resultValue = oprd1.truncatingRemainder(dividingBy: oprd2)
+                   } else {
+                       resultOutlet.text = "Error"
+                       return
+                   }
+               default:
+                   break
+               }
+               
+               currentInput = String(resultValue)
+               currentOperator = nil
+               previousInput = currentInput
+               resultOutlet.text = currentInput
+           }
+       }
+    
+    
+}//End of main
 
