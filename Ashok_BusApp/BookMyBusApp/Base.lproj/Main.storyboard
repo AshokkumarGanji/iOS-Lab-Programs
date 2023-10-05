@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Book My BusVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BookMyBusVC" customModule="BookMyBusApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="4uA-et-v5x" userLabel="BigContainerSV">
+                                <rect key="frame" x="10" y="62" width="373" height="720"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdj-4x-fU8">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="72"/>
+                                        <color key="backgroundColor" red="0.36078431372549019" green="0.50196078431372548" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H5z-zq-vqU">
+                                        <rect key="frame" x="0.0" y="86" width="373" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IfJ-pQ-zoM" userLabel="noOfpersonsSV">
+                                        <rect key="frame" x="0.0" y="172" width="373" height="72"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OWJ-Mq-uj0" userLabel="AdultsSV">
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="32"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adult:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfv-FD-gEP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="119" height="32"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNL-2m-8lv">
+                                                        <rect key="frame" x="127" y="0.0" width="119" height="32"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="8KH-ai-W2v">
+                                                        <rect key="frame" x="254" y="0.0" width="119" height="32"/>
+                                                        <connections>
+                                                            <action selector="firstStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="g2F-AV-pAc"/>
+                                                        </connections>
+                                                    </stepper>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aNZ-Kl-YzU" userLabel="ChildrensSV">
+                                                <rect key="frame" x="0.0" y="40" width="373" height="32"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Children:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMR-fs-cyz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="119" height="32"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaT-Pw-yb7">
+                                                        <rect key="frame" x="127" y="0.0" width="119" height="32"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="iaM-gs-8GU">
+                                                        <rect key="frame" x="254" y="0.0" width="119" height="32"/>
+                                                        <connections>
+                                                            <action selector="secondStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="Mc1-6U-YTO"/>
+                                                        </connections>
+                                                    </stepper>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RsI-St-1Yw" userLabel="buttonsSV">
+                                        <rect key="frame" x="0.0" y="258" width="373" height="72"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zm-1g-Nm4">
+                                                <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="72"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Seater">
+                                                    <color key="baseBackgroundColor" red="0.36078431370000003" green="0.50196078430000002" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="onSeaterBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MWr-BD-yQl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POy-Mv-sc1">
+                                                <rect key="frame" x="190.66666666666663" y="0.0" width="182.33333333333337" height="72"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Sleeper">
+                                                    <color key="baseBackgroundColor" red="0.36078431370000003" green="0.50196078430000002" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="onSleeperBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3u1-2T-noI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JZF-D5-fTD" userLabel="busSV">
+                                        <rect key="frame" x="0.0" y="344" width="373" height="144"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bus" translatesAutoresizingMaskIntoConstraints="NO" id="Ut6-Lg-TSX">
+                                                <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="144"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seater" translatesAutoresizingMaskIntoConstraints="NO" id="jKC-Ni-Gh4">
+                                                <rect key="frame" x="190.66666666666663" y="0.0" width="182.33333333333337" height="144"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTj-1E-UJt">
+                                        <rect key="frame" x="0.0" y="502" width="373" height="144"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="v61-TU-yUE" userLabel="actionsSV">
+                                        <rect key="frame" x="0.0" y="660" width="373" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzt-74-s7i">
+                                                <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="60"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Confirm">
+                                                    <color key="baseBackgroundColor" red="0.36078431370000003" green="0.50196078430000002" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="onConfirmBooking:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s5R-LA-BQ8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kY-gC-2wT">
+                                                <rect key="frame" x="190.66666666666663" y="0.0" width="182.33333333333337" height="60"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Reset">
+                                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="onCancelBooking:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5h1-ZG-IEP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jdj-4x-fU8" firstAttribute="height" secondItem="4uA-et-v5x" secondAttribute="height" multiplier="0.1" id="4Gh-80-91A"/>
+                                    <constraint firstItem="H5z-zq-vqU" firstAttribute="height" secondItem="4uA-et-v5x" secondAttribute="height" multiplier="0.1" id="4rw-Yd-Dje"/>
+                                    <constraint firstItem="RsI-St-1Yw" firstAttribute="height" secondItem="4uA-et-v5x" secondAttribute="height" multiplier="0.1" id="9FP-T3-Txv"/>
+                                    <constraint firstItem="v61-TU-yUE" firstAttribute="height" secondItem="4uA-et-v5x" secondAttribute="height" multiplier="0.1" id="Ger-Va-fSC"/>
+                                    <constraint firstItem="JZF-D5-fTD" firstAttribute="height" secondItem="4uA-et-v5x" secondAttribute="height" multiplier="0.2" id="Jbb-eU-sLr"/>
+                                    <constraint firstItem="BTj-1E-UJt" firstAttribute="height" secondItem="4uA-et-v5x" secondAttribute="height" multiplier="0.2" id="fz7-aK-s1o"/>
+                                    <constraint firstItem="IfJ-pQ-zoM" firstAttribute="height" secondItem="4uA-et-v5x" secondAttribute="height" multiplier="0.1" id="jC9-Ok-Egi"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="4uA-et-v5x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="69O-UM-KCI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4uA-et-v5x" secondAttribute="trailing" constant="10" id="VEd-9v-Pla"/>
+                            <constraint firstItem="4uA-et-v5x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="3" id="e7K-PV-Qp3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4uA-et-v5x" secondAttribute="bottom" constant="10" id="y5N-Kt-TaO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="busSeatingIMG" destination="jKC-Ni-Gh4" id="YTW-QC-lbI"/>
+                        <outlet property="cancelBTN" destination="8kY-gC-2wT" id="0tx-zp-HKj"/>
+                        <outlet property="confirmBTN" destination="hzt-74-s7i" id="1ea-kK-mlM"/>
+                        <outlet property="messageLBL" destination="BTj-1E-UJt" id="u6T-Eu-Bdq"/>
+                        <outlet property="nameTF" destination="H5z-zq-vqU" id="HQp-IH-8eI"/>
+                        <outlet property="noOfAdultsLBL" destination="NNL-2m-8lv" id="zkk-ie-XCr"/>
+                        <outlet property="noOfChildrenLBL" destination="PaT-Pw-yb7" id="bRf-KB-EqV"/>
+                        <outlet property="seaterBTN" destination="7Zm-1g-Nm4" id="JrX-PW-KMT"/>
+                        <outlet property="sleeperBTN" destination="POy-Mv-sc1" id="TPa-gU-neZ"/>
+                        <outlet property="titleLBL" destination="jdj-4x-fU8" id="jn3-XS-Nch"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bus" width="204" height="135.33332824707031"/>
+        <image name="seater" width="180" height="120"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
