@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ganji_SearchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="KI1-af-1cU" userLabel="SearchTextSearchButtonSV">
+                                <rect key="frame" x="20" y="99" width="350" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter a keyword to search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KzE-Kx-Q5R" userLabel="searchTextField">
+                                        <rect key="frame" x="0.0" y="0.0" width="246" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="textEnteredAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="hra-YR-8Yp"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjC-Pn-u4f" userLabel="searchButtonAction">
+                                        <rect key="frame" x="247" y="0.0" width="103" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="magnifyingglass" catalog="system" title="Search" titleAlignment="center"/>
+                                        <connections>
+                                            <action selector="searchButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cjg-II-wJb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CWM-DY-ccU"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g1H-ll-Cpo" userLabel="resultImage">
+                                <rect key="frame" x="20" y="174" width="350" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="aeu-0k-2vu"/>
+                                    <constraint firstAttribute="width" constant="350" id="bcc-DA-06W"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="gTW-Qn-flt" userLabel="AllButtonsSV">
+                                <rect key="frame" x="20" y="409" width="350" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bf4-ap-RZT">
+                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="⇦Prev"/>
+                                        <connections>
+                                            <action selector="ShowPrevImagesBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ann-Im-mlS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0N-xb-0nr">
+                                        <rect key="frame" x="129.33333333333334" y="0.0" width="91.333333333333343" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="🔄Reset"/>
+                                        <connections>
+                                            <action selector="ResetBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K4T-j6-icO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOa-t4-hnC">
+                                        <rect key="frame" x="258.66666666666669" y="0.0" width="91.333333333333314" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="⇨Next"/>
+                                        <connections>
+                                            <action selector="ShowNextImagesBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Qh-BI-Siq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="5Q2-MM-Kp6"/>
+                                    <constraint firstAttribute="height" constant="40" id="XcT-cu-Wbg"/>
+                                </constraints>
+                            </stackView>
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8TS-a0-e3B" userLabel="topicInfoText">
+                                <rect key="frame" x="36" y="486" width="320" height="192"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Bky-3P-2QY"/>
+                                    <constraint firstAttribute="width" constant="350" id="TRT-Tz-WwK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8TS-a0-e3B" secondAttribute="trailing" constant="20" id="4S6-Eb-bik"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KI1-af-1cU" secondAttribute="trailing" constant="20" id="A0Q-Wq-jMo"/>
+                            <constraint firstItem="8TS-a0-e3B" firstAttribute="top" secondItem="gTW-Qn-flt" secondAttribute="bottom" constant="35" id="AQV-cm-mKg"/>
+                            <constraint firstAttribute="trailing" secondItem="gTW-Qn-flt" secondAttribute="trailing" constant="20" id="BMA-nH-Ubl"/>
+                            <constraint firstItem="g1H-ll-Cpo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="EeO-Nx-xmx"/>
+                            <constraint firstItem="KI1-af-1cU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="V6O-6F-Jkr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g1H-ll-Cpo" secondAttribute="trailing" constant="20" id="Y6t-X6-MWE"/>
+                            <constraint firstItem="g1H-ll-Cpo" firstAttribute="top" secondItem="KI1-af-1cU" secondAttribute="bottom" constant="35" id="Yg9-Ly-Vu3"/>
+                            <constraint firstItem="KI1-af-1cU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="j7b-P2-R7r"/>
+                            <constraint firstItem="gTW-Qn-flt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qPt-50-2sK"/>
+                            <constraint firstItem="gTW-Qn-flt" firstAttribute="top" secondItem="g1H-ll-Cpo" secondAttribute="bottom" constant="35" id="yxa-8y-l3c"/>
+                            <constraint firstItem="8TS-a0-e3B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yxd-tt-gmF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ResetButtonOL" destination="N0N-xb-0nr" id="Xao-wb-nxv"/>
+                        <outlet property="ShowNextImagesBtn" destination="dOa-t4-hnC" id="cfe-oq-HVD"/>
+                        <outlet property="ShowPrevImagesBtn" destination="Bf4-ap-RZT" id="0Bf-bZ-ZuL"/>
+                        <outlet property="resultImage" destination="g1H-ll-Cpo" id="U0c-SM-5tn"/>
+                        <outlet property="searchButtonOL" destination="cjC-Pn-u4f" id="cNp-18-XpQ"/>
+                        <outlet property="searchTextField" destination="KzE-Kx-Q5R" id="Y3O-Ja-F0C"/>
+                        <outlet property="topicInfoText" destination="8TS-a0-e3B" id="H1c-F2-4pf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-153.43511450381678" y="-29.577464788732396"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
