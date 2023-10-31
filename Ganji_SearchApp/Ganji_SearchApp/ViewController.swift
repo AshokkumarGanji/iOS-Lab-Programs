@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Ganji_SearchApp
 //
-//  Created by saidi reddy cheemalamarri on 10/28/23.
+//  Created by Ganji Ashok Kumar on 10/28/23.
 //
 
 import UIKit
@@ -142,7 +142,7 @@ class ViewController: UIViewController {
     
     
     
-    @IBOutlet weak var topicInfoText: UITextField!
+    @IBOutlet weak var topicInfoText: UITextView!
     
     
     @IBAction func textEnteredAction(_ sender: UITextField) {
@@ -175,7 +175,7 @@ class ViewController: UIViewController {
         resultImage.image = UIImage(named: "welcome")
         searchButtonOL.isEnabled = false
         
-        
+        topicInfoText.text = ""
         hideButtons()
     }
 
