@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F94DCA112AF41BC80011A78C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DCA102AF41BC80011A78C /* AppDelegate.swift */; };
+		F94DCA132AF41BC80011A78C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DCA122AF41BC80011A78C /* SceneDelegate.swift */; };
+		F94DCA152AF41BC80011A78C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DCA142AF41BC80011A78C /* ViewController.swift */; };
+		F94DCA182AF41BC80011A78C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94DCA162AF41BC80011A78C /* Main.storyboard */; };
+		F94DCA1A2AF41BC90011A78C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F94DCA192AF41BC90011A78C /* Assets.xcassets */; };
+		F94DCA1D2AF41BC90011A78C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94DCA1B2AF41BC90011A78C /* LaunchScreen.storyboard */; };
+		F94DCA282AF41BC90011A78C /* WeightCalcAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DCA272AF41BC90011A78C /* WeightCalcAppTests.swift */; };
+		F94DCA322AF41BC90011A78C /* WeightCalcAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DCA312AF41BC90011A78C /* WeightCalcAppUITests.swift */; };
+		F94DCA342AF41BC90011A78C /* WeightCalcAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DCA332AF41BC90011A78C /* WeightCalcAppUITestsLaunchTests.swift */; };
+		F94DCA412AF41CFC0011A78C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DCA402AF41CFC0011A78C /* ResultViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F94DCA242AF41BC90011A78C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F94DCA052AF41BC80011A78C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F94DCA0C2AF41BC80011A78C;
+			remoteInfo = WeightCalcApp;
+		};
+		F94DCA2E2AF41BC90011A78C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F94DCA052AF41BC80011A78C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F94DCA0C2AF41BC80011A78C;
+			remoteInfo = WeightCalcApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F94DCA0D2AF41BC80011A78C /* WeightCalcApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightCalcApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F94DCA102AF41BC80011A78C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F94DCA122AF41BC80011A78C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F94DCA142AF41BC80011A78C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F94DCA172AF41BC80011A78C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F94DCA192AF41BC90011A78C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F94DCA1C2AF41BC90011A78C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F94DCA1E2AF41BC90011A78C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F94DCA232AF41BC90011A78C /* WeightCalcAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeightCalcAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F94DCA272AF41BC90011A78C /* WeightCalcAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightCalcAppTests.swift; sourceTree = "<group>"; };
+		F94DCA2D2AF41BC90011A78C /* WeightCalcAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeightCalcAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F94DCA312AF41BC90011A78C /* WeightCalcAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightCalcAppUITests.swift; sourceTree = "<group>"; };
+		F94DCA332AF41BC90011A78C /* WeightCalcAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightCalcAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F94DCA402AF41CFC0011A78C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F94DCA0A2AF41BC80011A78C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F94DCA202AF41BC90011A78C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F94DCA2A2AF41BC90011A78C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F94DCA042AF41BC80011A78C = {
+			isa = PBXGroup;
+			children = (
+				F94DCA0F2AF41BC80011A78C /* WeightCalcApp */,
+				F94DCA262AF41BC90011A78C /* WeightCalcAppTests */,
+				F94DCA302AF41BC90011A78C /* WeightCalcAppUITests */,
+				F94DCA0E2AF41BC80011A78C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F94DCA0E2AF41BC80011A78C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F94DCA0D2AF41BC80011A78C /* WeightCalcApp.app */,
+				F94DCA232AF41BC90011A78C /* WeightCalcAppTests.xctest */,
+				F94DCA2D2AF41BC90011A78C /* WeightCalcAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F94DCA0F2AF41BC80011A78C /* WeightCalcApp */ = {
+			isa = PBXGroup;
+			children = (
+				F94DCA102AF41BC80011A78C /* AppDelegate.swift */,
+				F94DCA122AF41BC80011A78C /* SceneDelegate.swift */,
+				F94DCA142AF41BC80011A78C /* ViewController.swift */,
+				F94DCA162AF41BC80011A78C /* Main.storyboard */,
+				F94DCA192AF41BC90011A78C /* Assets.xcassets */,
+				F94DCA1B2AF41BC90011A78C /* LaunchScreen.storyboard */,
+				F94DCA1E2AF41BC90011A78C /* Info.plist */,
+				F94DCA402AF41CFC0011A78C /* ResultViewController.swift */,
+			);
+			path = WeightCalcApp;
+			sourceTree = "<group>";
+		};
+		F94DCA262AF41BC90011A78C /* WeightCalcAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F94DCA272AF41BC90011A78C /* WeightCalcAppTests.swift */,
+			);
+			path = WeightCalcAppTests;
+			sourceTree = "<group>";
+		};
+		F94DCA302AF41BC90011A78C /* WeightCalcAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F94DCA312AF41BC90011A78C /* WeightCalcAppUITests.swift */,
+				F94DCA332AF41BC90011A78C /* WeightCalcAppUITestsLaunchTests.swift */,
+			);
+			path = WeightCalcAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F94DCA0C2AF41BC80011A78C /* WeightCalcApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F94DCA372AF41BC90011A78C /* Build configuration list for PBXNativeTarget "WeightCalcApp" */;
+			buildPhases = (
+				F94DCA092AF41BC80011A78C /* Sources */,
+				F94DCA0A2AF41BC80011A78C /* Frameworks */,
+				F94DCA0B2AF41BC80011A78C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeightCalcApp;
+			productName = WeightCalcApp;
+			productReference = F94DCA0D2AF41BC80011A78C /* WeightCalcApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F94DCA222AF41BC90011A78C /* WeightCalcAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F94DCA3A2AF41BC90011A78C /* Build configuration list for PBXNativeTarget "WeightCalcAppTests" */;
+			buildPhases = (
+				F94DCA1F2AF41BC90011A78C /* Sources */,
+				F94DCA202AF41BC90011A78C /* Frameworks */,
+				F94DCA212AF41BC90011A78C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F94DCA252AF41BC90011A78C /* PBXTargetDependency */,
+			);
+			name = WeightCalcAppTests;
+			productName = WeightCalcAppTests;
+			productReference = F94DCA232AF41BC90011A78C /* WeightCalcAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F94DCA2C2AF41BC90011A78C /* WeightCalcAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F94DCA3D2AF41BC90011A78C /* Build configuration list for PBXNativeTarget "WeightCalcAppUITests" */;
+			buildPhases = (
+				F94DCA292AF41BC90011A78C /* Sources */,
+				F94DCA2A2AF41BC90011A78C /* Frameworks */,
+				F94DCA2B2AF41BC90011A78C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F94DCA2F2AF41BC90011A78C /* PBXTargetDependency */,
+			);
+			name = WeightCalcAppUITests;
+			productName = WeightCalcAppUITests;
+			productReference = F94DCA2D2AF41BC90011A78C /* WeightCalcAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F94DCA052AF41BC80011A78C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F94DCA0C2AF41BC80011A78C = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					F94DCA222AF41BC90011A78C = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = F94DCA0C2AF41BC80011A78C;
+					};
+					F94DCA2C2AF41BC90011A78C = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = F94DCA0C2AF41BC80011A78C;
+					};
+				};
+			};
+			buildConfigurationList = F94DCA082AF41BC80011A78C /* Build configuration list for PBXProject "WeightCalcApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F94DCA042AF41BC80011A78C;
+			productRefGroup = F94DCA0E2AF41BC80011A78C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F94DCA0C2AF41BC80011A78C /* WeightCalcApp */,
+				F94DCA222AF41BC90011A78C /* WeightCalcAppTests */,
+				F94DCA2C2AF41BC90011A78C /* WeightCalcAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F94DCA0B2AF41BC80011A78C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F94DCA1D2AF41BC90011A78C /* LaunchScreen.storyboard in Resources */,
+				F94DCA1A2AF41BC90011A78C /* Assets.xcassets in Resources */,
+				F94DCA182AF41BC80011A78C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F94DCA212AF41BC90011A78C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F94DCA2B2AF41BC90011A78C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F94DCA092AF41BC80011A78C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F94DCA152AF41BC80011A78C /* ViewController.swift in Sources */,
+				F94DCA112AF41BC80011A78C /* AppDelegate.swift in Sources */,
+				F94DCA132AF41BC80011A78C /* SceneDelegate.swift in Sources */,
+				F94DCA412AF41CFC0011A78C /* ResultViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F94DCA1F2AF41BC90011A78C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F94DCA282AF41BC90011A78C /* WeightCalcAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F94DCA292AF41BC90011A78C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F94DCA322AF41BC90011A78C /* WeightCalcAppUITests.swift in Sources */,
+				F94DCA342AF41BC90011A78C /* WeightCalcAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F94DCA252AF41BC90011A78C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F94DCA0C2AF41BC80011A78C /* WeightCalcApp */;
+			targetProxy = F94DCA242AF41BC90011A78C /* PBXContainerItemProxy */;
+		};
+		F94DCA2F2AF41BC90011A78C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F94DCA0C2AF41BC80011A78C /* WeightCalcApp */;
+			targetProxy = F94DCA2E2AF41BC90011A78C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F94DCA162AF41BC80011A78C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F94DCA172AF41BC80011A78C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F94DCA1B2AF41BC90011A78C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F94DCA1C2AF41BC90011A78C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F94DCA352AF41BC90011A78C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F94DCA362AF41BC90011A78C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F94DCA382AF41BC90011A78C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeightCalcApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nwmsu.WeightCalcApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F94DCA392AF41BC90011A78C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeightCalcApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nwmsu.WeightCalcApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F94DCA3B2AF41BC90011A78C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nwmsu.WeightCalcAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeightCalcApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeightCalcApp";
+			};
+			name = Debug;
+		};
+		F94DCA3C2AF41BC90011A78C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nwmsu.WeightCalcAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeightCalcApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeightCalcApp";
+			};
+			name = Release;
+		};
+		F94DCA3E2AF41BC90011A78C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nwmsu.WeightCalcAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WeightCalcApp;
+			};
+			name = Debug;
+		};
+		F94DCA3F2AF41BC90011A78C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nwmsu.WeightCalcAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WeightCalcApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F94DCA082AF41BC80011A78C /* Build configuration list for PBXProject "WeightCalcApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F94DCA352AF41BC90011A78C /* Debug */,
+				F94DCA362AF41BC90011A78C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F94DCA372AF41BC90011A78C /* Build configuration list for PBXNativeTarget "WeightCalcApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F94DCA382AF41BC90011A78C /* Debug */,
+				F94DCA392AF41BC90011A78C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F94DCA3A2AF41BC90011A78C /* Build configuration list for PBXNativeTarget "WeightCalcAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F94DCA3B2AF41BC90011A78C /* Debug */,
+				F94DCA3C2AF41BC90011A78C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F94DCA3D2AF41BC90011A78C /* Build configuration list for PBXNativeTarget "WeightCalcAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F94DCA3E2AF41BC90011A78C /* Debug */,
+				F94DCA3F2AF41BC90011A78C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F94DCA052AF41BC80011A78C /* Project object */;
+}
